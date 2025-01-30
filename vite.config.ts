@@ -57,6 +57,12 @@ export default defineConfig((config) => {
         },
       },
     },
+    server: {
+      // Allow all ngrok hosts
+      allowedHosts: [
+        /^.*\.ngrok-free\.app$/,
+      ],
+    },
   };
 });
 
